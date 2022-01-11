@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+/*    asdadadadsa                                 ------------------------------------------------------*/
 .App {
   text-align: center;
 }
@@ -32,6 +36,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

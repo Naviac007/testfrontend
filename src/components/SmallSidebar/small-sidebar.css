@@ -1,0 +1,43 @@
+.sidebar_small ul li i {
+
+    color: #49691F !important;
+    padding-bottom: 9px !important;
+}
+
+.sidebar_small {
+    font-size: medium !important;
+    width: 5%;
+
+}
+
+
+.sidebar_small {
+    display: none;
+    background: white;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, #ECE9E6, #fff);
+
+}
+
+.sidebar_small ul li {
+    display: grid;
+    grid-template-columns: 28px;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 0;
+    color: #49691F !important;
+    padding: 20px 0;
+    font-size: 13px;
+    letter-spacing: 0.03rem;
+}
+
+
+
+.sidebar_small ul li:hover {
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.sidebar_small {
+    display: block;
+}
