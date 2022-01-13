@@ -2,6 +2,8 @@
 @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 
 /*    asdadadadsa                                 ------------------------------------------------------*/
+
+
 .App {
   text-align: center;
 }
@@ -30,6 +32,19 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.below-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+
+ul {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 @keyframes App-logo-spin {

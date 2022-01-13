@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { ReactSession } from 'react-client-session';
 
 import "./video-grid.css";
 const data = [
@@ -169,15 +170,16 @@ export default class VideoGrid extends Component {
         return (
             <Link className="text-link" to={"/watch/" + video.title}>
                 <div class="video" >
-
+                    <p class="animate-text">Description Description Description Description Description</p>
                     <img class="thumbnail" src={video.thumbnail} alt="" />
+
                     {!isSmall && <>
 
-                        <p class="title">{video.title}</p>
+                        <h6 class="title">{video.title}</h6>
 
                     </>}
                     {!!isSmall && <div>
-                        <p class="title">{video.title}</p>
+                        <h6 class="title">{video.title}</h6>
 
                     </div>}
 
@@ -191,7 +193,8 @@ export default class VideoGrid extends Component {
 
         return (
             <section class={`videos ${isSmall ? 'small-mode' : ''}`}>
-                {headerTitle && <h2>{headerTitle}</h2>}
+                {headerTitle && <h2>{headerTitle} {ReactSession.get("username")} </h2>}
+
                 {data.map(this.renderVideo)}
             </section>
         );

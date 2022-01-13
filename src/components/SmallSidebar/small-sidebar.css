@@ -4,10 +4,16 @@
     padding-bottom: 9px !important;
 }
 
+.sidebar_small ul li a {
+
+    color: #49691F !important;
+    padding-bottom: 9px !important;
+}
+
 .sidebar_small {
     font-size: medium !important;
     width: 5%;
-
+    margin-top: 60px;
 }
 
 
@@ -19,6 +25,8 @@
 
 }
 
+
+
 .sidebar_small ul li {
     display: grid;
     grid-template-columns: 28px;
@@ -29,8 +37,12 @@
     padding: 20px 0;
     font-size: 13px;
     letter-spacing: 0.03rem;
+    width: 100%;
 }
 
+.sidebar_small ul {
+    margin-left: 10px !important;
+}
 
 
 .sidebar_small ul li:hover {

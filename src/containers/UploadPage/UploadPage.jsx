@@ -88,7 +88,7 @@ class UploadPage extends Component {
     render() {
         return (
 
-            <div className='container'>
+            <div className='upload-container'>
                 <h1 className='title'>Upload</h1>
                 <div className='uploadForm'>
                     <div className='left'>

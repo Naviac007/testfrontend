@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
 import HomePage from './containers/HomePage/HomePage'
 import UploadPage from './containers/UploadPage/UploadPage'
@@ -10,7 +12,7 @@ import {
 } from "react-router-dom";
 import WatchPage from './containers/WatchPage/WatchPage';
 import SmallSidebar from './components/SmallSidebar/SmallSidebar'
-import Header from './components/Header/Header'
+import Header from './components/TestHeader/Header'
 
 class App extends React.Component {
   render() {
@@ -20,7 +22,7 @@ class App extends React.Component {
         <Header />
         <div className='below-navigation'>
         <SmallSidebar/>
-        <div style={ {width : "95%",}}>
+        <div style={ {width : "95%", marginTop: "65px"}}>
           <Switch>
             <Route exact path='/' >
               <HomePage />
