@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
 import HomePage from './containers/HomePage/HomePage'
 import UploadPage from './containers/UploadPage/UploadPage'
+import SearchPage from './containers/SearchPage/SearchPage'
 import {
   BrowserRouter as Router,
   Switch,
@@ -34,6 +35,10 @@ class App extends React.Component {
             </Route>
             <Route exact path='/Upload' >
               <UploadPage />
+
+            </Route>
+            <Route exact path='/Search/:id' >
+              <SearchPage />
 
             </Route>
           </Switch>

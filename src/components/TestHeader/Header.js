@@ -21,7 +21,7 @@ import { styled, alpha } from '@mui/material/styles';
 import Modal from '@mui/material/Modal';
 import { purple } from '@mui/material/colors';
 import { ReactSession } from 'react-client-session';
-
+import history from '../History/History'
 import "./header.css";
 
 
@@ -140,7 +140,10 @@ const onSearchChange=(event)=>{
     pass: "invalid password"
   };
 const handleSearch = ()=>{
-  
+  var string = document.getElementById("search").value
+  console.log(string)
+  history.push('/Search/'+string);
+  window.location.reload();
 }
   const handleSubmit = (event) => {
     //Prevent page reload
@@ -256,13 +259,13 @@ const handleSearch = ()=>{
               inputProps={{ 'aria-label': 'search' }}
               sx={{width:"100%"}}
               disabled={disabled}
-              
+              id='search'
             />
 
-            
+<Button sx={{background:"white"}} onClick={handleSearch}> <SearchIcon /></Button>
   
           </Search>
-          <IconButton sx={{background:"white"}}> <SearchIcon /></IconButton>
+         
           <Box sx={{ flexGrow: 0.8 }}>
               </Box>
             <Box sx={{ flexGrow: 0 }}>
