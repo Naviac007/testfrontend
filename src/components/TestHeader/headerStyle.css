@@ -15,6 +15,7 @@
 
 a {
     text-decoration: inherit;
+    color: black;
 }
 
 .back_btn,
@@ -63,12 +64,7 @@ a {
     width: 130px;
 }
 
-i {
-    color: blanchedalmond;
-    font-size: 25px;
-    padding: 0px;
 
-}
 
 .search {
     display: grid;
@@ -84,12 +80,19 @@ i {
     grid-column: search-start;
 }
 
-.new_video {
-    width: 7% !important;
+.nav-link-small {
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row !important;
     align-items: center;
-    color: blanchedalmond !important;
+    padding: 10px !important;
+
+}
+
+.nav-link-small i {
+
+    padding-right: 4px !important;
+
 }
 
 .search button {

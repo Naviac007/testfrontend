@@ -37,11 +37,16 @@
     padding: 20px 0;
     font-size: 13px;
     letter-spacing: 0.03rem;
-    width: 100%;
+    width: 69px;
+}
+
+.sidebar_small ul li i {
+
+    font-size: x-large;
 }
 
 .sidebar_small ul {
-    margin-left: 10px !important;
+    margin-left: 6px !important;
 }
 
 
